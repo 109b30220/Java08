@@ -1,0 +1,22 @@
+public class Class01 {
+	class Ca{
+		int a;
+		int b;
+		int c;
+		int d;
+		static double pi = 3.14159;
+		public static void Cal_area(int a,int b,int c,int d){
+			System.out.println("半徑="+a);
+			System.out.println("球形體積="+Math.round(4*pi*a*a*a/3*10.0)/10.0);
+			System.out.println();
+			System.out.println("長="+b+",寬="+c+",高="+d);
+			System.out.println("立方體表面積="+2*(b*c+c*d+d*b));
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Ca.Cal_area(10,4,5,6);
+	}
+
+}
