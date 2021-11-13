@@ -1,6 +1,5 @@
 package java10;
 
-import Class17.Namecard.Phone;
 
 class car{
 	protected String owner;
