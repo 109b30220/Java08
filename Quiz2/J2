@@ -44,3 +44,7 @@ static class  Cwin03 implements iShape03,iColor{
 	}
 
 }
+//輸出:color=Green
+width=5
+height=7
+area=35//
