@@ -1,0 +1,46 @@
+
+public class J2 {
+interface iShape03{
+	public void show();
+	public int area();
+}
+interface iColor{
+	public void showColor();
+}
+static class  Cwin03 implements iShape03,iColor{
+	protected int width;
+	protected int height;
+	protected String color;
+	private int area;
+	
+	public Cwin03(int i, int j, String string) {
+		width = i;
+		height = j;
+		color = string;
+	}
+	public void showColor() {
+		this.color = color;
+	}
+
+	public void show() {
+		System.out.println("color="+color);
+		System.out.println("width="+width);
+		System.out.println("height="+height);
+		System.out.println("area="+width *height);
+		
+	}
+
+	public int area() {
+		area = width *height;
+		return area;
+	}
+	
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cwin03 win = new Cwin03(5,7,"Green");
+		win.show();
+		
+	}
+
+}
